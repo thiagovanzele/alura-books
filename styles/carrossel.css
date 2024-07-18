@@ -30,31 +30,29 @@
 
 }
 
-.card__descricao {
+.card__descricao, .autora-mes__descricao {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5rem;
 }
 
-.descricao {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.descricao__titulo {
+.descricao__titulo, .descricao__titulo__autora-mes {
     color: var(--cor-titulo);
     font-weight: 700;
 }
 
-.descricao__titulo-livro {
+.descricao__titulo__autora-mes {
+    padding-top: 0.5rem;
+}
+
+.descricao__titulo-livro, .autora-mes__nome {
     font-weight: 700;
     font-size: 1.125rem;
     color: var(--azul);
     margin: 0.5rem 0;
 }
 
-.descricao__texto {
+.descricao__texto, .autora-mes__texto {
     font-size: 0.875rem;
 }
 
@@ -79,4 +77,8 @@
     color: var(--branco);
     font-weight: 700;
     text-decoration: none;
+}
+
+.autora-mes {
+    margin-right: 1rem;
 }
