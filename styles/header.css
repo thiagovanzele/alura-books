@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
+    padding: 1.5rem;
 }
 
 .cabecalho {
@@ -15,12 +16,20 @@
     position: relative;
 }
 
+.cabecalho__menu, .cabecalho__menu-titulo {
+    display: none;
+}
+
 .container {
     display: flex;
     align-items: center;
 }
 
-.container__imagem {
+.opcoes {
+    display: none;
+}
+
+.container__imagem-menu {
     padding: 1rem;
 }
 
@@ -28,7 +37,7 @@
     display: none;
     position: absolute;
     top: 100%;
-    width: 60vw;
+    width: 50vw;
 }
 
 .container__botao {
@@ -47,13 +56,95 @@
 .lista-menu__link {
     text-decoration: none;
     text-transform: uppercase;
+    color: var(--azul);
+}
+
+.lista-menu__item:hover {
     background: var(--azul-degrade);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+}
+
+.lista-menu__item:hover .lista-menu__link {
+    color: var(--branco);
 }
 
 .lista-menu__titulo, .lista-menu__item {
     padding: 1rem;
     background-color: var(--branco);
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-left: 2.5rem;
+        display: flex;
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .cabecalho__menu, .cabecalho__menu-titulo {
+        display: inline-block;
+    }
+
+    .cabecalho__menu-titulo {
+        font-family: var(--fonte-josefin);
+        font-size: 1.875rem;
+        color: var(--preto);
+        padding-left: 2rem;
+    }
+
+    .cabecalho__menu-titulo b {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+        text-transform: uppercase;
+        margin-left: 3rem;
+        font-family: var(--fonte-principal);
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+
+    .opcoes__botao:checked ~ .lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .imagem-favorito {
+        display: none;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .opcoes__link:hover {
+        color: var(--branco);
+    }
+
+    .opcoes__item {
+        padding: 1.6rem;
+    }
+
+    .opcoes__item:hover .opcoes__link {
+        color: var(--branco);
+    }
+
+    .lista-menu__item:hover,
+    .opcoes__item:hover {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .lista-menu__item:hover .lista-menu__link {
+        color: var(--branco);
+    }
+
+    .opcoes__link:hover {
+        color: var(--branco);
+    }
 }
