@@ -7,3 +7,49 @@
     padding: 1.5rem;
     color: var(--preto);
 }
+
+.rodape__container {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        display: flex;
+    }
+
+    .rodape__texto {
+        font-size: 1.5rem;
+        width: 180px;
+        padding-top: 3.8rem;
+    }
+
+    .rodape__container {
+        display: block;
+        border-top: 1px solid var(--cinza);
+        padding-left: 4rem;
+        display: flex;
+        padding-top: 4rem;
+        width: 100dvb;
+        gap: 4rem;
+    }
+
+    .lista__rodape-link {
+        text-decoration: none;
+        color: var(--cinza-escuro);
+        display: flex;
+        align-items: center;
+    }
+
+    .lista__rodape-item {
+        padding-bottom: 1.5rem;    
+    }
+
+    .lista__rodape-link img {
+        margin-right: 0.5rem;
+    }
+
+    .rodape__educacao-online {
+        width: 30%;
+    }
+
+}
