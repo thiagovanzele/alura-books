@@ -16,6 +16,10 @@
     position: relative;
 }
 
+.container__imagem-text {
+    display: none;
+}
+
 .cabecalho__menu, .cabecalho__menu-titulo {
     display: none;
 }

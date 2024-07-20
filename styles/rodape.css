@@ -1,15 +1,19 @@
 .rodape {
     background-color: var(--branco);
+    width: 100%;
 }
 
 .rodape__texto {
-    border-top: 1px solid var(--cinza);
     padding: 1.5rem;
     color: var(--preto);
 }
 
 .rodape__container {
     display: none;
+}
+
+.rodape__linha {
+    margin: 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -25,7 +29,6 @@
 
     .rodape__container {
         display: block;
-        border-top: 1px solid var(--cinza);
         padding-left: 4rem;
         display: flex;
         padding-top: 4rem;
@@ -51,5 +54,29 @@
     .rodape__educacao-online {
         width: 30%;
     }
+
+}
+
+@media screen and (min-width: 1728px) {
+   .rodape {
+    display: flex;
+    width: 100%;
+   }
+
+   .rodape__texto {
+    padding-left: 15rem;
+   }
+
+   .rodape__container {
+    display: flex;
+    gap: 5rem;
+   }
+
+   .rodape__lista {
+    border-left: .5px solid var(--cinza);
+    height: 450px;
+    width: auto;
+    padding: 0 0rem 5rem 1rem;
+   }
 
 }
