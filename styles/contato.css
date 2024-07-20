@@ -31,3 +31,35 @@
     font-size: 1rem;
     padding-left: 2rem;
 }
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        align-items: center;
+        padding: 2rem 8rem;
+    }
+    
+    .container__contato {
+        width: 50%;
+    }
+
+    .contato__titulo {
+        font-size: 1.5rem;
+    }
+
+    .contato__email {
+        justify-content: flex-end;
+        align-items: center;
+        height: 10px;
+        width: 40%;
+        margin-top: 2rem;
+    }
+
+
+    .contato__email::placeholder {
+        display: flex;
+        padding: 1rem;
+        background-position: .5rem;
+        padding-left: 2.5rem;
+    }
+}
