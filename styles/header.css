@@ -161,4 +161,8 @@
     .container__imagem-text {
         padding-right: 3rem;
     }
+
+    .container__imagem-text {
+        display: block;
+    }
 }
